@@ -158,6 +158,10 @@ p {
 	margin-left: 550px;
 }
 
+.social .col-md-offset-4 {
+    padding: 0
+}
+
 /* Copyrights */
 
 .copyright {
