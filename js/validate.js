@@ -24,8 +24,9 @@ $(document).ready(function()
             },
             submitHandler: function(form)
             {
-                $("#contact").submit();
                 alert('Thank You!');
+                $("#contact").submit();
+
             }
         })
         
@@ -40,8 +41,8 @@ $(document).ready(function()
             },
             submitHandler: function(form)
             {
-                $("#subs").submit();
                 alert('Thank You!');
+                $("#subs").submit();
             }
         })
     }
