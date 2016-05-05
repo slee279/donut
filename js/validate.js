@@ -22,4 +22,13 @@ $(document).ready(function(){
             }
         }
     )
+    $("#subs").validate({
+        rules:
+        {
+            "email":{
+                required: true,
+                email: true
+            }
+        }
+    })
 })
