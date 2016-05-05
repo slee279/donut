@@ -21,17 +21,8 @@ $(document).ready(function() {
             },
         }
     })
-
-    $("#click").click(function() {
-        $("#subs").validate({
-            rules:
-            {
-                "email": {
-                    required: true,
-                    email: true
-                }
-            }
-        })
-        alert("Thank You");
-    })
+    
+    var subvalidator = new Validator("#subs")
+    subvalidator.EnableMsgsTogether();
+    subvalidator.addValidation("email","req","Please enter valid email address.")
 })
