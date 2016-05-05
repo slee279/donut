@@ -3,6 +3,7 @@ $(document).ready(function()
     {
         $("#contact").validate(
         {
+            submitHandler: function(form) {
             rules:
             {
                 "email": {
@@ -22,6 +23,8 @@ $(document).ready(function()
                     required: true
                 },
             }
+            form.submit();
+        }
         })
         
         $("#subs").validate(
