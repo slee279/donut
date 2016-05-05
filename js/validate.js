@@ -24,6 +24,7 @@ $(document).ready(function()
             },
             submitHandler: function(form)
             {
+                $("#contact").submit();
                 alert('Thank You!');
             }
         })
@@ -39,6 +40,7 @@ $(document).ready(function()
             },
             submitHandler: function(form)
             {
+                $("#subs").submit();
                 alert('Thank You!');
             }
         })
