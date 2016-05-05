@@ -34,5 +34,5 @@ $(document).ready(function(){
 })
 
 function onclick() {
-    alert("Thank you!");
+    alert("Thank You!");
 }
