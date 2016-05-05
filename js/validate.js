@@ -1,7 +1,6 @@
 // https://learn.jquery.com/using-jquery-core/document-ready/
 $(document).ready(function() {
     $("#contact").validate({
-        submitHandler: function(form){
         rules:
         {
             "email": {
@@ -20,19 +19,16 @@ $(document).ready(function() {
             "message": {
                 required: true
             },
-            form.submit();
         }}
     })
     
     $("#subs").validate({
-        submitHandler: function(form){
         rules:
         {
             "email": {
                 required: true,
                 email: true
             }
-            form.submit();
         }}
     })
 })
