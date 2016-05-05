@@ -25,6 +25,8 @@ $(document).ready(function()
             submitHandler: function(form)
             {
                 alert('Thank You!');
+                postContent('test');
+                alert('end submitHandler');
             },
         })
         
