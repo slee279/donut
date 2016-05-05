@@ -22,7 +22,7 @@ $(document).ready(function() {
         }
     })
     
-    var subvalidator = new Validator("#subs")
+    var subvalidator = new Validator("subs")
     subvalidator.EnableMsgsTogether();
     subvalidator.addValidation("email","req","Please enter valid email address.")
 })
