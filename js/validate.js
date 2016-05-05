@@ -32,3 +32,7 @@ $(document).ready(function(){
         }
     })
 })
+
+function onclick() {
+    alert("Thank you!");
+}
