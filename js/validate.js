@@ -1,37 +1,37 @@
 // https://learn.jquery.com/using-jquery-core/document-ready/
-$(document).ready(function(){
+$(document).ready(function() {
     $("#contact").validate({
-            rules: 
+        rules:
+        {
+            "email": {
+                required: true,
+                email: true
+            },
+            "name": {
+                required: true,
+            },
+            "full_name": {
+                required: true
+            },
+            "subject": {
+                required: true
+            },
+            "message": {
+                required: true
+            },
+        }
+    })
+
+    $("#click").click(function() {
+        $("#subs").validate({
+            rules:
             {
                 "email": {
                     required: true,
                     email: true
-                },
-                "name": {
-                    required: true,
-                },
-                "full_name": {
-                    required: true
-                },
-                "subject": {
-                    required: true
-                },
-                "message": {
-                    required: true
-                },
+                }
             }
-        }
-    )
-    $("#subs").validate({
-        rules:
-        {
-            "email":{
-                required: true,
-                email: true
-            }
-        }
-    })
-    $("#click").click(function(){
+        })
         alert("Thank You");
     })
 })
