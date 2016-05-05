@@ -3,28 +3,28 @@ $(document).ready(function()
     {
         $("#contact").validate(
         {
-            submitHandler: function(form) 
+            rules:
             {
-                rules:
-                {
-                    "email": {
-                        required: true,
-                        email: true
-                    },
-                    "name": {
-                        required: true,
-                    },
-                    "full_name": {
-                        required: true
-                    },
-                    "subject": {
-                        required: true
-                    },
-                    "message": {
-                        required: true
-                    },
-                }
-            form.submit()
+                "email": {
+                    required: true,
+                    email: true
+                },
+                "name": {
+                    required: true,
+                },
+                "full_name": {
+                    required: true
+                },
+                "subject": {
+                    required: true
+                },
+                "message": {
+                    required: true
+                },
+            },
+            submitHandler: function(form)
+            {
+                alert('Thank You!');
             }
         })
         
@@ -36,6 +36,10 @@ $(document).ready(function()
                     required: true,
                     email: true
                 }
+            },
+            submitHandler: function(form)
+            {
+                alert('Thank You!');
             }
         })
     }
