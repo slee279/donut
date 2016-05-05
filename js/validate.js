@@ -26,8 +26,12 @@ $(document).ready(function()
             {
                 alert('Thank You!');
                 $("#contact").submit();
-
-            }
+                alert('end submitHandler');
+            },
+            invalidHandler: function(form, validator) 
+            {
+                alert('invalidHandler');
+            },
         })
         
         $("#subs").validate(
@@ -43,7 +47,12 @@ $(document).ready(function()
             {
                 alert('Thank You!');
                 $("#subs").submit();
-            }
+                alert('end submitHandler');
+            },
+            invalidHandler: function(form, validator) 
+            {
+                alert('invalidHandler');
+            },
         })
     }
 )
