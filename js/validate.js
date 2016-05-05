@@ -31,8 +31,7 @@ $(document).ready(function(){
             }
         }
     })
+    $("#click").click(function(){
+        alert("Thank You");
+    })
 })
-
-function onclick() {
-    alert("Thank You!");
-}
