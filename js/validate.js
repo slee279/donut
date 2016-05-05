@@ -1,6 +1,7 @@
 // https://learn.jquery.com/using-jquery-core/document-ready/
 $(document).ready(function() {
     $("#contact").validate({
+        submitHandler: function(form){
         rules:
         {
             "email": {
@@ -19,14 +20,18 @@ $(document).ready(function() {
             "message": {
                 required: true
             },
-        }
+            form.submit();
+        }}
     })
     
-    var subvalidator = new Validator("subs")
-    subvalidator.EnableMsgsTogether();
-    subvalidator.addValidation("email","req","Please enter valid email address.")
-    
-    $("#click").click(function(){
-        alert("Thank You");
+    $("#subs").validate({
+        rules:
+        {
+            "email": {
+                required: true,
+                email: true
+            }
+            form.submit();
+        }}
     })
 })
