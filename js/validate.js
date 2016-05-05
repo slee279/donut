@@ -25,12 +25,6 @@ $(document).ready(function()
             submitHandler: function(form)
             {
                 alert('Thank You!');
-                $("#contact").submit();
-                alert('end submitHandler');
-            },
-            invalidHandler: function(form, validator) 
-            {
-                alert('invalidHandler');
             },
         })
         
@@ -46,12 +40,6 @@ $(document).ready(function()
             submitHandler: function(form)
             {
                 alert('Thank You!');
-                $("#subs").submit();
-                alert('end submitHandler');
-            },
-            invalidHandler: function(form, validator) 
-            {
-                alert('invalidHandler');
             },
         })
     }
