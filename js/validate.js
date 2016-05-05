@@ -25,6 +25,7 @@ $(document).ready(function() {
     })
     
     $("#subs").validate({
+        submitHandler: function(form){
         rules:
         {
             "email": {
