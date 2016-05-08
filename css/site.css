@@ -129,5 +129,5 @@ body {
 .copyright {
 	font-size: 14px;
 	margin: auto;
-	padding: auto;
+	padding: inherit;
 }
